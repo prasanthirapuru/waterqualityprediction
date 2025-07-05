@@ -1,43 +1,58 @@
-💧 Water Quality Prediction – RMS
-This project aims to predict multiple water quality parameters using machine learning techniques—specifically a MultiOutputRegressor wrapped around a RandomForestRegressor. It was developed as part of a one-month AICTE Virtual Internship sponsored by Shell in June 2025.
+# 💧 Water Pollutants Prediction
 
-🌍 Overview
-Access to clean and safe water is a global priority. Predicting water quality parameters accurately can assist in early detection of contamination and facilitate proactive intervention.
+A Streamlit web application that predicts water pollutant levels based on the **year** and **station ID** using a machine learning model trained on historical water quality data (2000–2021).
 
-In this project, we:
+---
 
-Collected and preprocessed real-world water quality datasets
+## 🚀 Project Overview
 
-Applied supervised learning for multi-output regression
+This project is built to help analyze water pollution trends by estimating six key pollutants:
 
-Built a pipeline using MultiOutputRegressor with RandomForestRegressor
+- **O₂** (Oxygen)
+- **NO₃** (Nitrate)
+- **NO₂** (Nitrite)
+- **SO₄** (Sulfate)
+- **PO₄** (Phosphate)
+- **CL** (Chloride)
 
-Evaluated the model using various regression metrics
+It uses a trained machine learning model and provides an easy-to-use interface for making predictions.
 
-🛠️ Technologies Used
-Python 3.12
+---
 
-Pandas, NumPy – Data preprocessing & manipulation
+## 🧪 Features
 
-Scikit-learn – Machine learning modeling & evaluation
+- 🔢 Input: Year and Station ID  
+- 📊 Output: Predicted pollutant levels  
+- 🎯 Model: Pre-trained ML model using historical data  
+- 🌐 Interface: Built using Streamlit for ease of access and deployment  
 
-Matplotlib, Seaborn – Data visualization
+---
 
-Jupyter Notebook – Interactive development
+## 🗂️ Files in This Repository
 
-🔮 Predicted Water Quality Parameters
-The model is capable of predicting several important water quality indicators, including:
+| File Name                | Description                                      |
+|--------------------------|--------------------------------------------------|
+| `app.py`                 | Main Streamlit app for predicting pollutants     |
+| `pollution_model.pkl`    | Trained ML model file                            |
+| `model_columns.pkl`      | Model's expected input feature columns           |
+| `PB_All_2000_2021.csv`   | Historical water quality dataset (2000–2021)     |
+| `WaterQualityPred.ipynb` | Jupyter Notebook used for training the model     |
 
-NH₄ (Ammonium)
+---
+## 🔗 ACCESS & TECH STACK
 
-BOD₅ (Biochemical Oxygen Demand)
+📁 **model-link**  
+👉 https://drive.google.com/file/d/1np0Xo-di9083ehxeKC4vRAx3gYZ-98OP/view?usp=drive_link
 
-Colloids
+🛠️ **Tech Stack Used**  
+• Python 3.12  
+• Pandas, NumPy – Data handling  
+• Scikit-learn – Machine learning model and evaluation  
+• Matplotlib, Seaborn – Data visualization  
+• Jupyter Notebook – Interactive experimentation  
+• Streamlit – Web application interface  
+• Joblib, Pickle – Model serialization 
 
-O₂ (Dissolved Oxygen)
-
-NO₃ (Nitrate), NO₂ (Nitrite)
-
-SO₄ (Sulfate), PO₄ (Phosphate)
-
-Cl⁻ (Chloride)
+---
+That's it! 🚀  
+Feel free to explore, modify, and enhance the project.  
