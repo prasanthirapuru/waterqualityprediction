@@ -5,18 +5,15 @@ import joblib
 import streamlit as st
 import gdown
 
-# Download model files if not exist
+# File names
 MODEL_FILE = "pollution_model.pkl"
 MODEL_COLS_FILE = "model_columns.pkl"
 
+# Download pollution_model.pkl if it doesn't exist
 MODEL_URL = "https://drive.google.com/uc?id=1np0Xo-di9083ehxeKC4vRAx3gYZ-98OP"
-MODEL_COLS_URL = "https://drive.google.com/uc?id=YOUR_MODEL_COLUMNS_FILE_ID"
 
 if not os.path.exists(MODEL_FILE):
     gdown.download(MODEL_URL, MODEL_FILE, quiet=False)
-
-if not os.path.exists(MODEL_COLS_FILE):
-    gdown.download(MODEL_COLS_URL, MODEL_COLS_FILE, quiet=False)
 
 # Load model
 model = joblib.load(MODEL_FILE)
