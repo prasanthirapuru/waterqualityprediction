@@ -4,6 +4,12 @@ A Streamlit web application that predicts water pollutant levels based on the **
 
 ---
 
+## 🌐 Live Demo & Online Access
+
+- **Streamlit Web App**: [Open in Streamlit](https://waterqualityprediction-oedcfuqibfaou6pjdfd2tq.streamlit.app/)  
+- **Replit / Online Code Editor**: [View Code on Replit](https://github.com/prasanthirapuru/waterqualityprediction)
+
+---  
 ## 🚀 Project Overview
 
 This project is built to help analyze water pollution trends by estimating six key pollutants:
